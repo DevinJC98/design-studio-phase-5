@@ -23,18 +23,14 @@ header {
   background-color: white;
 }
 
+#content {
+  display: flex;
+}
 header img {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-
-#artisanlogo {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
 nav {
   width: 70%;
   display: flex;
@@ -51,11 +47,57 @@ nav a {
 
 main {
   display: flex;
-  height: 85vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 2%;
+}
+#artisanlogo {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+#pagetitle {
+  margin: 0;
+  height: auto;
+  padding: 0;
+  border: 0;
+  border: 0px solid black;
+}
+#vendorlist {
   width: 100%;
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  place-items: center;
+  row-gap: 30px;
+  column-gap: 10px;
+}
+#vendorlist div {
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  width: 20%;
+  border: 1px solid black;
+  margin: 0;
 }
 
 footer {
@@ -64,4 +106,10 @@ footer {
   justify-content: center;
   border: 1px solid black;
   padding: 1%;
+}
+
+ul {
+  list-style: none;
+  line-height: 2;
+  padding-left: 0;
 }
